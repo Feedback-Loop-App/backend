@@ -12,12 +12,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
-  res.redirect('/api/bookmarks');
+  res.redirect('/api/posts');
 });
 
 //controllers
 const postsController = require('./controllers/posts');
-app.use('/api/bookmarks/', postsController);
+app.use('/api/posts/', postsController);
 
 //status code
 app.use((err, req, res, next) => {
