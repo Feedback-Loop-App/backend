@@ -13,4 +13,4 @@ Posts.deleteMany({})
   .catch(console.error)
   .finally(() => {
     process.exit();
-  });
+  })
