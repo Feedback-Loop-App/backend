@@ -18,22 +18,22 @@ router.get('/', (req, res, next) => {
 router.post('/', (req, res, next) => {
     // 1. Use the data in the req body to create a new post
     Post.create(req.body)
-      // 2. If the create is successful, redirect to main page
+      // 2. If the create is successful, find all posts for page reload
       .then(() => {
-        res.redirect('/')
+        Post.find({})
+        .then((posts) => res.json(posts))
+        .catch(next);
       })
-      //If there's an error pass it on
-      .catch(next);
   });
 
 // Update: Update a posts in the DB and return all posts
 router.put('/:id', (req, res, next) => {
-    // 1. Use the data in the req body to an existing gif
+    // 1. Use the data in the req body to an existing 
     Post.findOneAndUpdate(
         { _id: req.params.id },
         req.body,
         { new: true })
-      // 2. If the update is successful, find all gifs for page reload
+      // 2. If the update is successful, find all posts for page reload
       .then(() => {
         Post.find({})
         .then((posts) => res.json(posts))
@@ -45,8 +45,7 @@ router.put('/:id', (req, res, next) => {
 router.delete('/:id', (req, res, next) => {
     // 1. Find the resource to delete
     Post.findOneAndDelete({ _id: req.params.id })
-      // 2. If the delete is successful, find all gifs for page reload
-      // Includes a return statement so that the .then() method doesn't return undefined
+      // 2. If the delete is successful, find all posts for page reload
       // .then() must include a response for them to be  chained
       .then(() => {
         Post.find({})
