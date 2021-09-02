@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 
 //controllers
 const postsController = require('./controllers/posts');
-app.use('/api/posts/', postsController);
+app.use('/posts/', postsController);
 
 //status code
 app.use((err, req, res, next) => {
