@@ -12,12 +12,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
-  res.redirect('/api/posts');
+  res.redirect('/posts');
 });
 
 //controllers
 const postsController = require('./controllers/posts');
 app.use('/posts/', postsController);
+
+const usersController = require('./controllers/users');
+app.use('/users/', usersController);
 
 //status code
 app.use((err, req, res, next) => {
