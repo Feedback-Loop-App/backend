@@ -27,7 +27,6 @@ function commentModal (post) {
     currentComments = post.comments
   }
   
-
 function incrementLikes (post) {
     currentlyEditing = post._id
     let likes = post.likes
@@ -99,7 +98,6 @@ function showPosts (postData) {
   })
 }
 
-
 axios.get('http://localhost:4000/posts').then(response => {
   // gets the initial data
   showPosts(response.data)
@@ -131,7 +129,6 @@ commentSubmit.addEventListener('click', (e) => {
     })
   })
   
-
 submit.addEventListener('click', (e) => {
   // submits the post request to create a new post
   const user = document.getElementById('user').value
