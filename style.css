@@ -20,11 +20,11 @@ button {
 .post {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: left;
     background-color: lightgray;
     width: 60%;
-    height: 250px;
+    min-height: 250px;
     margin: 20px;
     padding: 10px;
     cursor: pointer;
@@ -36,4 +36,19 @@ a {
 
 .like-btn{
     width: 100px;
+}
+
+.comment-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    background-color: aliceblue;
+    width: 90%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.comment{
+    height: 10px;
 }
