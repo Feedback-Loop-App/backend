@@ -23,6 +23,10 @@ const PostSchema = new mongoose.Schema({
         type: [String],
         default: []
     },
+    tags: {
+        type: [String],
+        default: []
+    },
     owner: {
         // References use the type ObjectId
         type: mongoose.Schema.Types.ObjectId,
