@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow');
+
+body {
+    font-family: 'Barlow', sans-serif;
+    margin: auto;
+}
+
+button {
+    margin-top: 15px !important;
+    margin-right: 15px !important;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    background-color: lightgray;
+    width: 60%;
+    min-height: 250px;
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+a {
+    margin-left: 15px;
+}
+
+.like-btn{
+    width: 100px;
+}
+
+.comment-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    background-color: aliceblue;
+    width: 90%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.comment{
+    height: 10px;
+}
