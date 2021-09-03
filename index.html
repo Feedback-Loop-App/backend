@@ -18,20 +18,53 @@
     <nav>
         <div class="nav-wrapper white">
             <a href="#" class="brand-logo red-text">FeedbackLoop</a>
-            <button data-target="modal-create" class="btn modal-trigger right grey">+</button>
+            <button data-target="modal-new-account" class="btn modal-trigger right grey">Create Account</button>
+            <button data-target="modal-login" class="btn modal-trigger right grey">Login</button>
+            <button data-target="modal-create" class="btn modal-trigger right grey">New Post</button>
         </div>
-    </nav>            
+    </nav> 
+    <div class="main">   
+    <div class="users">
+        <h2>Users</h2>
+    </div>       
     <div class="posts">
+        <h2>Posts</h2>
     </div>
-  
+    
+    <div id="modal-new-account" class="modal">
+        <div class="modal-content">
+          <h4>Create Account</h4>
+              <div class="row">
+                  <div class="input-field">
+                      <input id="new-username" type="text" class="validate">
+                      <label for="new-username">Username</label>
+                  </div>
+                  <div class="input-field">
+                    <input id="new-email" type="text" class="validate">
+                    <label for="new-email">Email</label>
+                </div>
+                  <button class="btn grey center-align" id="submit-new-account">Create</button>
+              </div>
+        </div>
+    </div>
+
+    <div id="modal-login" class="modal">
+        <div class="modal-content">
+          <h4>User Login</h4>
+              <div class="row">
+                  <div class="input-field">
+                      <input id="username" type="text" class="validate">
+                      <label for="username">Username</label>
+                  </div>
+                  <button class="btn grey center-align" id="submit-login">Login</button>
+              </div>
+        </div>
+      </div>
+
     <div id="modal-create" class="modal">
       <div class="modal-content">
         <h4>Create a New Post</h4>
             <div class="row">
-                <div class="input-field">
-                    <input id="user" type="text" class="validate">
-                    <label for="user">User</label>
-                </div>
                 <div class="input-field">
                     <input id="title" type="text" class="validate">
                     <label for="title">Title</label>
@@ -75,6 +108,7 @@
             </div>
         </div>
     </div>
+</div> 
       
     <script src="script.js"></script>
 </body>
