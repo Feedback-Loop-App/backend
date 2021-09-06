@@ -21,6 +21,8 @@ app.use('/posts/', postsController);
 
 const usersController = require('./controllers/users');
 app.use('/users/', usersController);
+const filterController = require('./controllers/filter')
+app.use('/filter/', filterController);
 
 //status code
 app.use((err, req, res, next) => {
