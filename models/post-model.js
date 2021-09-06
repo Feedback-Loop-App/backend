@@ -19,10 +19,10 @@ const PostSchema = new mongoose.Schema({
         type: Number,
         default: 0
     },
-    comments:{
-        type: [String],
-        default: []
-    },
+    comments: [{
+        username: String,
+        body: String
+    }],
     tags: {
         type: [String],
         default: []
