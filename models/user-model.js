@@ -7,8 +7,15 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true,
     default: "Guest",
-},
-  email: String,
+  },
+  email: {
+    type: String,
+    required: true,
+  },
+  password: {
+    type: String,
+    required: true,
+  },
 });
 
 // instantiate the model with the schema
