@@ -6,7 +6,6 @@ const Post = require('../models/post-model');
 
 //delete existing posts in DB
 Post.deleteMany({})
-  .then(() => User.deleteMany({}))
   .then(() => {
     return User.create({ username: 'coder123', email: 'coder123@gmail.com' })
       .then((user) =>
