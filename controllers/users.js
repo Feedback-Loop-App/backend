@@ -16,12 +16,14 @@ router.get('/', (req, res, next) => {
 });
 
 //user login
-router.get('/login', (req, res, next) => {
+router.post('/login', (req, res, next) => {
   User.findOne({
     username: req.body.username,
     password: req.body.password
   })
-  .then((post) => res.json(post))
+  .then((post) => {
+    res.json(post)
+  })
   // 3. If there's an error pass it on
   .catch(next);
 });
