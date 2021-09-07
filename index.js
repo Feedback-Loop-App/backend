@@ -17,12 +17,13 @@ app.get('/', (req, res) => {
 
 //controllers
 const postsController = require('./controllers/posts');
-app.use('/posts/', postsController);
+app.use('/posts', postsController);
 
 const usersController = require('./controllers/users');
-app.use('/users/', usersController);
+app.use('/users', usersController);
+
 const filterController = require('./controllers/filter')
-app.use('/filter/', filterController);
+app.use('/filter', filterController);
 
 //status code
 app.use((err, req, res, next) => {
