@@ -3,7 +3,19 @@ const mongoose = require('../db/connection');
 
 // make a user schema
 const UserSchema = new mongoose.Schema({
-  username: String,
+  username: {
+    type: String,
+    required: true,
+    default: "Guest",
+  },
+  email: {
+    type: String,
+    required: true,
+  },
+  password: {
+    type: String,
+    required: true,
+  },
 });
 
 // instantiate the model with the schema

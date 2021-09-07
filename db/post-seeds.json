@@ -1,0 +1,42 @@
+
+[
+    {
+        "title": "React",
+        "body": "Thinking about the advantage of use context over params.  What do you prefer?",
+        "likes": 2,
+        "comments": [{
+            "username":"Nita",
+            "body":"great post"}],
+        "tags": ["JavaScript", "React.js", "Discussion", "Open"]
+    },
+    {
+        "title": "React",
+        "body": "Thinking about the advantage of use context over params.  What do you prefer?",
+        "likes": 2,
+        "comments": [{
+            "username":"Cole",
+            "body":"not sure"}],
+        "tags": ["JavaScript", "React.js", "Discussion", "Open"]
+    },
+    {
+        "title": "React",
+        "body": "Thinking about the advantage of use context over params.  What do you prefer?",
+        "likes": 3,
+        "comments": [],
+        "tags": ["JavaScript", "React.js", "Discussion", "Open"]
+    },
+    {
+        "title": "React",
+        "body": "Thinking about the advantage of use context over params.  What do you prefer?",
+        "likes": 4,
+        "comments": [{
+            "username":"Michael",
+            "body":"yes"
+        },
+        {
+            "username":"Michael",
+            "body":"oh actually no"
+            }],
+        "tags": ["JavaScript", "React.js", "Discussion", "Open"]
+    }
+]
