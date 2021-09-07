@@ -15,6 +15,17 @@ router.get('/', (req, res, next) => {
     .catch(next);
 });
 
+//user login
+router.get('/login', (req, res, next) => {
+  User.findOne({
+    username: req.body.username,
+    password: req.body.password
+  })
+  .then((post) => res.json(post))
+  // 3. If there's an error pass it on
+  .catch(next);
+});
+
 // Show: Get a User by ID
 router.get('/:id', (req, res, next) => {
   // 1. Find the User by its unique ID
