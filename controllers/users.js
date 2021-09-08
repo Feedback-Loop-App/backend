@@ -21,8 +21,8 @@ router.post('/login', (req, res, next) => {
     username: req.body.username,
     password: req.body.password
   })
-  .then((post) => {
-    res.json(post)
+  .then((user) => {
+    res.json(user)
   })
   // 3. If there's an error pass it on
   .catch(next);
