@@ -43,16 +43,17 @@ router.put('/:id', (req, res) => {
       .catch(console.error);
   });
 
-// Delete: DELETE the post with a given id from the database
+// Delete the post with a given id from the database
 router.delete('/:id', (req, res) => {
-    // 1. Find a post by id and delete
+    //Find a post by id and delete
     Post.findOneAndDelete({ _id: req.params.id })
-      // 2. Send it back to the client as JSON
+      //Find and send all posts back to the client as JSON
       .then(() => {
         Post.find({})
         .then((posts) => res.json(posts))
         .catch(console.error)
       })
+      //Find and send all posts back to the client as JSON
       .catch(console.error);
   });
 
