@@ -3,7 +3,7 @@
     {
         "title": "React",
         "body": "Thinking about the advantage of use context over params.  What do you prefer?",
-        "likes": 2,
+        "likes": [],
         "comments": [{
             "username":"Nita",
             "body":"great post"}],
@@ -12,7 +12,7 @@
     {
         "title": "React",
         "body": "Thinking about the advantage of use context over params.  What do you prefer?",
-        "likes": 2,
+        "likes": [],
         "comments": [{
             "username":"Cole",
             "body":"not sure"}],
@@ -21,14 +21,14 @@
     {
         "title": "React",
         "body": "Thinking about the advantage of use context over params.  What do you prefer?",
-        "likes": 3,
+        "likes": [],
         "comments": [],
         "tags": ["JavaScript", "React.js", "Discussion", "Open"]
     },
     {
         "title": "React",
         "body": "Thinking about the advantage of use context over params.  What do you prefer?",
-        "likes": 4,
+        "likes": [],
         "comments": [{
             "username":"Michael",
             "body":"yes"
