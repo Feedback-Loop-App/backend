@@ -20,6 +20,5 @@ mongoose
   )
   .catch((error) => console.log('Connection failed!', error));
 
-// now, our mongoose instance has a configured connection to our local db, in addition
-// to its model configuration
+//mongoose instance now has a configured connection to our local db
 module.exports = mongoose;
