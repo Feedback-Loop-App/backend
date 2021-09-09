@@ -1,4 +1,4 @@
-# Feedback Loop Backend
+## Feedback Loop - Backend
 Feedback Loop is a full-stack React app for software developers looking to connect with peers, discuss the learning process, and share advice and encouragement.
 
 The Backend of Feedback Loop manages the database of Feedback Loop's users and posts.
@@ -9,18 +9,17 @@ We started this project with the goal of making a full-stack MERN app with a hig
 We learned a great deal about express router functionality in developing this project. As our project became more complex, we also developed a deeper understanding of mongoose Schema.
 
 ### Installation
-To run this repository locally, run *npm i*. This will install the relevant node packages listed in the project's dependencies.
-
-Then seed your local User and Post databases with *node db/post-seeds.js* and *node db/user-seeds.js*
-
-Finally, host the project locally using *nodemon index.js*
+To run this repository locally:
++ run *npm i*. This will install the relevant node packages listed in the project's dependencies.
++ Seed your local User and Post databases with *node db/post-seeds.js* and *node db/user-seeds.js*
++ Host the project locally using *nodemon index.js*
 
 ### Technologies Used
-[node.js](https://nodejs.org/en/)
-[express js](https://expressjs.com/)
-[nodemon](https://nodemon.io/)
-[mongoose](https://mongoosejs.com/docs/)
-[MongoDB](https://www.mongodb.com/)
++ [node.js](https://nodejs.org/en/)
++ [express js](https://expressjs.com/)
++ [nodemon](https://nodemon.io/)
++ [mongoose](https://mongoosejs.com/docs/)
++ [MongoDB](https://www.mongodb.com/)
 
 ### Features List
 + Moongoose schema for creating new posts
