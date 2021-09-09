@@ -7,7 +7,8 @@ router.get("/", async (req, res) => {
 
   const searchTerm = req.query.search;
     Post.find( { $or:[ 
-      {'username':{ "$regex": searchTerm, "$options": "i" }}, 
+      {'username':{ "$regex": searchTerm, "$options": "i" }},
+      {'title':{ "$regex": searchTerm, "$options": "i" }}, 
       {'tags': {$in: [searchTerm]}}, 
       { "body": { "$regex": searchTerm, "$options": "i" }}
     ]}) 
