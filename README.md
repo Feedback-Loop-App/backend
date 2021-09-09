@@ -3,6 +3,12 @@ Feedback Loop is a full-stack React app for software developers looking to conne
 
 The Backend of Feedback Loop manages the database of Feedback Loop's users and posts.
 
+### Team
++ [Michael Dunn-O'Connor](https://github.com/dunnoconnor) - Scrum Master
++ [Cole Rener](https://github.com/dishbin)
++ [Nita Lo](https://github.com/nlo88)
++ [Menty Sisay](https://github.com/mentysisay)
+
 ### Background
 We started this project with the goal of making a full-stack MERN app with a highly relevant use-case. As a team of software developers, it made sense to make a tool to help teams like us collaborate.
 
