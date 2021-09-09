@@ -14,6 +14,8 @@ We started this project with the goal of making a full-stack MERN app with a hig
 
 We learned a great deal about express router functionality in developing this project. As our project became more complex, we also developed a deeper understanding of mongoose Schema.
 
+<img width="600" alt="data flow" src="https://user-images.githubusercontent.com/37776449/132764389-62c51126-04ba-46bc-a180-2a4b387e360c.png">
+
 ### Installation
 To run this repository locally:
 + run *npm i*. This will install the relevant node packages listed in the project's dependencies.
