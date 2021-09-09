@@ -7,7 +7,7 @@ const Post = require('../models/post-model');
 //delete existing posts in DB
 Post.deleteMany({})
   .then(() => {
-    return User.create({ username: 'coder123', email: 'coder123@gmail.com' })
+    return User.create({ username: 'coder123', email: 'coder123@gmail.com', password: 'coder123' })
       .then((user) =>
         postSeeds.map((post) => ({ ...post, owner: user._id, username: user.username}))
       )
