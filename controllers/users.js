@@ -16,36 +16,36 @@ router.get('/', (req, res, next) => {
 });
 
 //user login
-router.post('/login', (req, res, next) => {
+router.post('/login', (req, res) => {
+  //find a user with matching username and password
   User.findOne({
     username: req.body.username,
     password: req.body.password
   })
+  //Send the user back to the client as JSON
   .then((user) => {
     res.json(user)
   })
-  // 3. If there's an error pass it on
-  .catch(next);
+  .catch(console.error);
 });
 
 // Show: Get a User by ID
-router.get('/:id', (req, res, next) => {
-  // 1. Find the User by its unique ID
+router.get('/:id', (req, res) => {
+  //Find the User by its unique ID
   User.findById(req.params.id)
-    // 2. Send it back to the client as JSON
+    //Send the user back to the client as JSON
     .then((user) => res.json(user))
-    // 3. If there's an error pass it on!
-    .catch(next);
+    .catch(console.error);
 });
 
-// Create: Create a new resource in the DB and return it
-router.post('/', (req, res, next) => {
+// Create: Create a new User in the DB and return it
+router.post('/', (req, res) => {
   // 1. Use the data in the req body to create a new User
   User.create(req.body)
     // 2. If the create is successful, send back the record that was inserted
     .then((user) => res.json(user))
     // 3. If there was an error, pass it on!
-    .catch(next);
+    .catch(console.error);
 });
 
 module.exports = router;
