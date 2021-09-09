@@ -6,11 +6,12 @@ const Post = require('../models/post-model');
 router.get("/", async (req, res) => {
 
   const searchTerm = req.query.search;
+  const closeMatch = { "$regex": searchTerm, "$options": "i" };
     Post.find( { $or:[ 
-      {'username':{ "$regex": searchTerm, "$options": "i" }},
-      {'title':{ "$regex": searchTerm, "$options": "i" }}, 
-      {'tags': {$in: [searchTerm]}}, 
-      { "body": { "$regex": searchTerm, "$options": "i" }}
+      {'username':closeMatch},
+      {'title':closeMatch}, 
+      {'tags':{$in: [searchTerm]}}, 
+      { "body":closeMatch}
     ]}) 
     .then((posts) => res.json(posts))
     
